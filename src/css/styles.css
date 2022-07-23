@@ -1,10 +1,39 @@
-html{
-  background-color: #252525
+html[data-theme='dark'] {
+  --bgcolor: #212a2e;
+  --fgcolor: whitesmoke;
+  --primary: dodgerblue;
+  --secondary: coral;
 }
-body{
+
+html[data-theme='light'] {
+  --bgcolor: whitesmoke;
+  --fgcolor: #212a2e;
+  --primary: coral;
+  --secondary: dodgerblue;
+}
+
+html{
+  background-color: var(--bgcolor);
+  text-color: var(--fgcolor);
+  link-color: var(--secondary);
+  
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  color: white;
+  color: var(--fgcolor);
+}
+
+a{color:var(--secondary);}
+
+header{
+  background-color: var(--primary);
+}
+
+
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -12,42 +41,17 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
 }
 
-a{
-  color: coral;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #252525;
-  width: 50%;
-  margin: 10px;
-}
-header div:nth-child(1) h1, header div:nth-child(1) h2{
+header h2{
   text-align: center;
   text-transform: uppercase;
 }
-header table{
-  margin: 0 auto;
-}
-header table tr td:nth-child(1){
-  text-align: right;
-}
-#header2{
-  display: flex;
- justify-content: center;
-}
+
 .card{
   display: flex;
   flex-direction: row;
   text-align: left;
   
 }
-
 
 .card > div > .avatar{
   width: 100px;
@@ -72,33 +76,50 @@ header table tr td:nth-child(1){
 }
 
 nav{
+  text-transform: uppercase;
+}
+
+.tablink {
   background-color: dodgerblue;
+  color: var(--fgcolor);
+  cursor: pointer;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tab .active{
+  background-color: coral;
+  color: dodgerblue;
 }
 
 nav ul{
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: DodgerBlue;
+  background-color: var(--bgcolor);
+  /* border: 10px solid dodgerblue;  */
   list-style-type: none;
-  margin: 0 10px;
-  padding: 0;
+  text-align: center;
   text-transform: uppercase;
-  border: 1px solid dodgerblue;
 
 }
 nav ul li{
-  background-color: #252525;
+  flex: 1 1 0px;
+  background-color: cadetblue;
   padding: 15px 0;
-}
-nav li a{
-  border-right: 1px solid dodgerblue;
+  /* border-right: 5px solid dodgerblue;
+  border-left: 5px solid dodgerblue; */
 }
 
 nav ul li:hover{
   color: coral;
 }
-nav ul li a {
+nav ul li{
   color:dodgerblue;
   text-decoration: none;
   font-size: 1.5rem;
@@ -106,22 +127,16 @@ nav ul li a {
   padding: 15px;
 }
 
-nav ul li a:focus {
+nav ul li:focus {
   background-color: coral;
-  color:white;
+  color: var(--fgcolor);
 }
 
-nav ul li a:hover {
+nav ul li:hover {
   color: coral;
 }
 
-nav ul li.usn-item {
-  padding-bottom: 0;
-}
-nav ul li.usn-item a {
-  padding-bottom: 0;
-  padding-top: 25px;
-}
+.usn-item{padding: 10px 0 5px;}
 
 #usn-logo{
   fill: dodgerblue;
@@ -133,5 +148,12 @@ nav ul li.usn-item a {
 
 #usn-logo:focus{
   background-color: coral;
-  color:white;
+  color: var(--fgcolor);
+}
+
+#toggle-darktheme{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 1.2rem;;
 }

@@ -1,0 +1,11 @@
+.tabcontent{
+  color: var(--fgcolor);
+  display: none;
+  padding: 60px 20px;
+  height: 100%;
+}
+
+.tabcontent h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+}

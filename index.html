@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,46 +18,60 @@
 
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="./src/css/tore.css" />
+    <link rel="stylesheet" href="./src/css/tabs.css" />
 
     <script type="module" src="./src/js/tore.js"></script>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="flex-container">
+      <div class="card">
         <div>
-          <h1>Webutvikling</h1>
-          <h2>Bachelor i Visuell Kommunikasjon</h2>
+          <img
+            class="avatar"
+            src="https://github.com/renbergdesign.png"
+            alt=""
+          />
         </div>
-        <div id="header2">
-          <div class="card">
-            <div>
-              <img
-                class="avatar"
-                src="https://github.com/renbergdesign.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <br />
-              <h2>Markus Jarl Renberg</h2>
-              <p><i>Student</i></p>
-              <br />
-              <ul class="platforms">
-                <li>VS Code</li>
-                <li>Chrome</li>
-                <li>Github</li>
-              </ul>
-            </div>
-          </div>
+        <div>
+          <br />
+          <h2>Markus Jarl Renberg</h2>
+          <p><i>Student</i></p>
+          <br />
+          <ul class="platforms">
+            <li>VS Code</li>
+            <li>Chrome</li>
+            <li>Github</li>
+          </ul>
         </div>
       </div>
       <nav>
         <ul>
           <li
-            title="INLINE SVG SOM BLIR ENDRET AV CSS"
-            class="listitem usn-item"
+            class="listitem txt-only tablink active" id="defaultOpen"
+            onclick="openPage('Home', this)"
           >
+            Hjem
+          </li>
+          <li
+            class="listitem txt-only tablink"
+            onclick="openPage('notes', this)"
+          >
+            Forelesninger
+          </li>
+          <li
+            class="listitem txt-only tablink"
+            onclick="openPage('litterature', this)"
+          >
+            Pensum
+          </li>
+          <li
+            class="listitem txt-only tablink"
+            onclick="openPage('tutorials', this)"
+          >
+            Tutorials
+          </li>
+          <li title="www.usn.no - Emneplan" class="listitem usn-item tablink">
             <a
               target="_blank"
               href="https://www.usn.no/studier/studie-og-emneplaner/#/emne/VISIKT210_3_2022_H%C3%98ST"
@@ -197,30 +211,125 @@
               </svg>
             </a>
           </li>
-          <li class="listitem txt-only">
-            <a
-              target="_blank"
-              href="./kilder/LITTERATUR/CSS3%20The%20Missing%20Manual,%203rd%20Edition%20(+code)/Book/CSS3%20The%20Missing%20Manual,%203rd%20Edition.pdf"
-              >Pensumbok 1</a
-            >
-          </li>
-          <li class="listitem txt-only">
-            <a target="_blank" href="./kilder/LITTERATUR/flexboxfieldguide.pdf"
-              >Pensumbok 2</a
-            >
-          </li>
-          <li class="listitem txt-only">
-            <a target="_blank" href="#">Tutorials</a>
-          </li>
-          <li class="listitem txt-only">
-            <a target="_blank" href="#">Notater</a>
-          </li>
         </ul>
+
+        <!-- <button class="tablink" onclick="openPage('Home', this)">
+          Home
+        </button>
+        <button
+          class="tablink"
+          onclick="openPage('News', this)"
+          id="defaultOpen"
+        >
+          News
+        </button>
+        <button class="tablink" onclick="openPage('Contact', this)">
+          Contact
+        </button>
+        <button class="tablink" onclick="openPage('About', this)">
+          About
+        </button> -->
       </nav>
     </header>
 
     <!-- Main -->
-    <main></main>
+    <main>
+      <div id="Home" class="tabcontent">
+        <h2>WEBUTVIKLING</h2>
+        <hr />
+        <h3>Dette er Tore</h3>
+        <p>Tore er lei av å kode...</p>
+        <p>La nå Tore være i fred</p>
+        <div class="tore">
+          <div class="eye eye1">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye eye2">
+            <div class="pupil"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="notes" class="tabcontent">
+        <h2>Forelesninger</h2>
+        <hr />
+      </div>
+
+      <div id="litterature" class="tabcontent">
+        <h2>Pensum</h2>
+        <hr />
+        <h3>CSS3: The Missing Manual (3rd Edition)</h3>
+        <a
+          target="_blank"
+          href="src\ebooks\CSS3 The Missing Manual, 3rd Edition (+code)\Book\CSS3 The Missing Manual, 3rd Edition.pdf"
+        >
+          <p>Klikk for pdf-versjon</p>
+          <picture>
+            <source
+              srcset="
+                src\img\book-cover_css3-the-missing-manual_400x525px_WEBP.webp
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                src\img\book-cover_css3-the-missing-manual_400x525px_PNG.png
+              "
+              type="image/png"
+            />
+            <img
+              src="src\img\book-cover_css3-the-missing-manual_400x525px_PNG.png"
+            />
+          </picture>
+        </a>
+        <p>Grunnleggende | 650 sider.</p>
+
+        <hr />
+
+        <h3>A Guide to Flexbox</h3>
+        <a target="_blank" href="src\ebooks\flexboxfieldguide.pdf">
+          <p>Klikk for pdf-versjon</p>
+          <picture>
+            <source
+              srcset="src\img\book-cover_A-Guide-To-Flexbox_340x500px_WEBP.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="src\img\book-cover_A-Guide-To-Flexbox_340x500px_PNG.png"
+              type="image/png"
+            />
+            <img
+              src="src\img\book-cover_A-Guide-To-Flexbox_340x500px_PNG.png"
+            />
+          </picture>
+        </a>
+        <p>Forenklet illustrasjon av CSS Flexbox | 40 sider.</p>
+      </div>
+
+      <div id="tutorials" class="tabcontent">
+        <h2>Tutorials</h3>
+        <hr>
+      </div>
+
+      <script>
+        function openPage(pageName, elmnt) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = 'var(--bgcolor)';
+        }
+
+        // Open default
+        document.getElementById("defaultOpen").click();
+      </script>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -229,19 +338,40 @@
         Javascript på nettsiden - Ikke e-bøker eller pdf'er av publiserte
         opplag)
       </p> -->
-      <br />
-      <br />
-      <h2>Dette er Tore</h2>
-      <p>Tore er lei av å kode...</p>
-      <p>La nå Tore være i fred</p>
-      <div class="tore">
-        <div class="eye eye1">
-          <div class="pupil"></div>
-        </div>
-        <div class="eye eye2">
-          <div class="pupil"></div>
-        </div>
-      </div>
+
+      <!-- <script>
+        const container = document.body('webPage');
+
+        // This function will execute itself when the script is loaded
+        (function(){
+            // Then set the 'data-theme' attribute to whatever is in localstorage
+            container.setAttribute('data-theme', localStorage.getItem('theme'));    
+        })();
+
+        function darkMode() {
+
+            // Check what is the current theme and get the opposite one
+            var targetTheme = container.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+
+            // Set the attribute 'data-theme' to the targetTheme
+            container.setAttribute('data-theme', targetTheme);
+
+            // Save the targetTheme to the localstorage
+            localStorage.setItem('theme', targetTheme);
+        }
+      </script> -->
+
+      <button
+        id="toggle-darktheme"
+        onclick="
+        let currentTheme = document.documentElement.getAttribute('data-theme') ;
+        let newTheme = currentTheme == 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', '--');
+        "
+      >
+        Skift fargetema
+      </button>
     </footer>
   </body>
 </html>
