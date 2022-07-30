@@ -1,34 +1,27 @@
-html[data-theme='dark'] {
-  --bgcolor: #212a2e;
-  --fgcolor: whitesmoke;
-  --primary: dodgerblue;
-  --secondary: coral;
-}
-
-html[data-theme='light'] {
-  --bgcolor: whitesmoke;
-  --fgcolor: #212a2e;
-  --primary: coral;
-  --secondary: dodgerblue;
-}
-
 html{
   background-color: var(--bgcolor);
-  text-color: var(--fgcolor);
-  link-color: var(--secondary);
-  
+  color: var(--txtcolor);
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  color: var(--fgcolor);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #767676;
 }
 
 a{color:var(--secondary);}
 
-header{
-  background-color: var(--primary);
-}
-
-
+header{background-color: var(--primary);}
 
 body{
   margin: 0;
@@ -81,7 +74,7 @@ nav{
 
 .tablink {
   background-color: dodgerblue;
-  color: var(--fgcolor);
+  color: var(--txtcolor);
   cursor: pointer;
 }
 
@@ -129,7 +122,7 @@ nav ul li{
 
 nav ul li:focus {
   background-color: coral;
-  color: var(--fgcolor);
+  color: var(--txtcolor);
 }
 
 nav ul li:hover {
@@ -148,7 +141,7 @@ nav ul li:hover {
 
 #usn-logo:focus{
   background-color: coral;
-  color: var(--fgcolor);
+  color: var(--txtcolor);
 }
 
 #toggle-darktheme{
@@ -156,4 +149,20 @@ nav ul li:hover {
   right: 0;
   bottom: 0;
   font-size: 1.2rem;;
+}
+
+main iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+
+iframe h1, 
+iframe h2, 
+iframe h3, 
+iframe h4, 
+iframe h5, 
+iframe h6, 
+iframe p {
+  color: var(--txtcolor);
 }

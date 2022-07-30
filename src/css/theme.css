@@ -1,0 +1,13 @@
+html[data-theme='dark'] {
+  --bgcolor: #212a2e;
+  --txtcolor: whitesmoke;
+  --primary: dodgerblue;
+  --secondary: coral;
+}
+
+html[data-theme='light'] {
+  --bgcolor: whitesmoke;
+  --txtcolor: #212a2e;
+  --primary: coral;
+  --secondary: dodgerblue;
+}

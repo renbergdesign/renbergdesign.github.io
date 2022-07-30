@@ -1,0 +1,3 @@
+- Toggle CSS
+- Build CSS
+- Get data from usn.no/Emneplan
