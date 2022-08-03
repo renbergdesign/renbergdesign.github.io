@@ -5,10 +5,13 @@
   min-height: 100vh;
 }
 
+.tabcontent .title{
+  padding-left: 40px;
+}
+
 .tabcontent h2{
   font-size: 3rem;
   text-transform: uppercase;
-  padding-left: 28px;
 }
 
 .sheet{
@@ -16,6 +19,7 @@
   padding: 20px;
   margin: 20px;
   min-height: 80vh;
+  box-shadow: gray -3px 3px 11px;
 }
 
 .sheet h3{

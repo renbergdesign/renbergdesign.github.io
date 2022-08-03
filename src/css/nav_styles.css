@@ -83,18 +83,14 @@ nav ul li:focus {
 }
 
 
-#syllabus{
+#lectures{
   background-color: var(--bg-tab2);
 }
 
-#notes{
+#projects{
   background-color: var(--bg-tab3);
 }
 
-#litterature{
-  background-color: var(--bg-tab4);
-}
-
 #tutorials{
-  background-color: var(--bg-tab5);
+  background-color: var(--bg-tab4);
 }

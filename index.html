@@ -48,16 +48,13 @@
         <li class="tab1 listitem txt-only tablink active" id="defaultOpen" onclick="openPage('home', this)">
           Hjem
         </li>
-        <li title="www.usn.no - Emneplan" class="tab2 listitem tablink" onclick="openPage('syllabus', this)">
-          Emneplan
-        </li>
-        <li class="tab3 listitem txt-only tablink" onclick="openPage('notes', this)">
+        <li class="tab2 listitem tablink" onclick="openPage('lectures', this)">
           Forelesninger
         </li>
-        <li class="tab4 listitem txt-only tablink" onclick="openPage('litterature', this)">
-          E-Bøker
+        <li class="tab3 listitem txt-only tablink" onclick="openPage('projects', this)">
+          Prosjekter
         </li>
-        <li class="tab5 listitem txt-only tablink" onclick="openPage('tutorials', this)">
+        <li class="tab4 listitem txt-only tablink" onclick="openPage('tutorials', this)">
           Tutorials
         </li>
       </ul>
@@ -68,48 +65,25 @@
   <!-- Main -->
   <main>
     <div id="home" class="tabcontent">
-      <h2>WEBUTVIKLING</h2>
-      <hr />
-
-      <div class="sheet">
-        <h3>Javascript</h3>
-        <h4>Dette er Tore</h4>
-        <p>Tore er lei av å kode...</p>
-        <p>La nå Tore være i fred</p>
-        <div class="tore">
-          <div class="eye eye1">
-            <div class="pupil"></div>
-          </div>
-          <div class="eye eye2">
-            <div class="pupil"></div>
-          </div>
-        </div>
-
-      </div>
+      <div w3-include-html="pages\home.html"></div>
     </div>
-
-
-    <!-- EMNEPLAN START -->
-    <div id="syllabus" class="tabcontent">
-      <div w3-include-html="syllabus.html"></div>
     </div>
-    <!-- EMNEPLAN END -->
 
     <!-- FORELESNINGER START -->
-    <div id="notes" class="tabcontent">
-      <div w3-include-html="notes.html"></div>
+    <div id="lectures" class="tabcontent">
+      <div w3-include-html="pages\lectures.html"></div>
     </div>
     <!-- FORELESNINGER END -->
 
     <!-- PENSUM START -->
-    <div id="litterature" class="tabcontent">
-      <div w3-include-html="litterature.html"></div>
+    <div id="projects" class="tabcontent">
+      <div w3-include-html="pages\projects.html"></div>
     </div>
     <!-- PENSUM END -->
 
     <!-- TUTORIALS START -->
     <div id="tutorials" class="tabcontent">
-      <div w3-include-html="tutorials.html"></div>
+      <div w3-include-html="pages\tutorials.html"></div>
     </div>
     <!-- TUTORIALS END -->
 
