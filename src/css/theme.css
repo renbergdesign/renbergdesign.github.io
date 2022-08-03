@@ -1,8 +1,29 @@
+html[data-theme='organized'] {
+  --bgcolor: white;
+  --txtcolor: #212a2e;
+  --primary: white;
+  --secondary: coral;
+
+  --bg-tab1: #fde221;
+  --bg-tab2: #ff8549;
+  --bg-tab3: #fb579b;
+  --bg-tab4: #816dde;
+  --bg-tab5: #0176c3;
+  
+}
+
 html[data-theme='dark'] {
   --bgcolor: #212a2e;
   --txtcolor: whitesmoke;
   --primary: dodgerblue;
   --secondary: coral;
+
+  --bg-tab1: #212a2e;
+  --bg-tab2: #212a2e;
+  --bg-tab3: #212a2e;
+  --bg-tab4: #212a2e;
+  --bg-tab5: #212a2e;
+  
 }
 
 html[data-theme='light'] {
@@ -10,4 +31,10 @@ html[data-theme='light'] {
   --txtcolor: #212a2e;
   --primary: coral;
   --secondary: dodgerblue;
+
+  --bg-tab1: whitesmoke;
+  --bg-tab2: whitesmoke;
+  --bg-tab3: whitesmoke;
+  --bg-tab4: whitesmoke;
+  --bg-tab5: whitesmoke;
 }

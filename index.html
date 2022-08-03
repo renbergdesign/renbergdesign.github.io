@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="organized">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
   </style>
 
   <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="stylesheet" href="./src/css/nav_styles.css" />
   <link rel="stylesheet" href="./src/css/tore.css" />
   <link rel="stylesheet" href="./src/css/tabs.css" />
   <link rel="stylesheet" href="./src/css/theme.css" />
@@ -44,57 +45,46 @@
     </div>
     <nav>
       <ul>
-        <li class="listitem txt-only tablink active" id="defaultOpen" onclick="openPage('Home', this)">
+        <li class="tab1 listitem txt-only tablink active" id="defaultOpen" onclick="openPage('home', this)">
           Hjem
         </li>
-        <li title="www.usn.no - Emneplan" class="listitem usn-item tablink" onclick="openPage('syllabus', this)">
+        <li title="www.usn.no - Emneplan" class="tab2 listitem tablink" onclick="openPage('syllabus', this)">
           Emneplan
         </li>
-        <li class="listitem txt-only tablink" onclick="openPage('notes', this)">
+        <li class="tab3 listitem txt-only tablink" onclick="openPage('notes', this)">
           Forelesninger
         </li>
-        <li class="listitem txt-only tablink" onclick="openPage('litterature', this)">
-          Pensum
+        <li class="tab4 listitem txt-only tablink" onclick="openPage('litterature', this)">
+          E-Bøker
         </li>
-        <li class="listitem txt-only tablink" onclick="openPage('tutorials', this)">
+        <li class="tab5 listitem txt-only tablink" onclick="openPage('tutorials', this)">
           Tutorials
         </li>
       </ul>
 
-      <!-- <button class="tablink" onclick="openPage('Home', this)">
-          Home
-        </button>
-        <button
-          class="tablink"
-          onclick="openPage('News', this)"
-          id="defaultOpen"
-        >
-          News
-        </button>
-        <button class="tablink" onclick="openPage('Contact', this)">
-          Contact
-        </button>
-        <button class="tablink" onclick="openPage('About', this)">
-          About
-        </button> -->
     </nav>
   </header>
 
   <!-- Main -->
   <main>
-    <div id="Home" class="tabcontent">
+    <div id="home" class="tabcontent">
       <h2>WEBUTVIKLING</h2>
       <hr />
-      <h3>Dette er Tore</h3>
-      <p>Tore er lei av å kode...</p>
-      <p>La nå Tore være i fred</p>
-      <div class="tore">
-        <div class="eye eye1">
-          <div class="pupil"></div>
+
+      <div class="sheet">
+        <h3>Javascript</h3>
+        <h4>Dette er Tore</h4>
+        <p>Tore er lei av å kode...</p>
+        <p>La nå Tore være i fred</p>
+        <div class="tore">
+          <div class="eye eye1">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye eye2">
+            <div class="pupil"></div>
+          </div>
         </div>
-        <div class="eye eye2">
-          <div class="pupil"></div>
-        </div>
+
       </div>
     </div>
 
@@ -135,7 +125,7 @@
           tablinks[i].style.backgroundColor = "";
         }
         document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = 'var(--bgcolor)';
+        // elmnt.style.backgroundColor = 'var(--bgcolor)';
       }
 
       // Open default
@@ -172,15 +162,33 @@
             localStorage.setItem('theme', targetTheme);
         }
       </script> -->
-
-    <button id="toggle-darktheme" onclick="
+    <div id="toggle-theme">
+      <span id="current-theme">organized theme</span>
+      <button id="toggle-darktheme" onclick="
         let currentTheme = document.documentElement.getAttribute('data-theme') ;
-        let newTheme = currentTheme == 'dark' ? 'light' : 'dark';
+        let newTheme;
+
+        switch(currentTheme) {
+          case 'organized':
+            newTheme = 'dark';
+            break;
+          case 'dark':
+            newTheme = 'light';
+            break;
+          case 'light':
+            newTheme = 'organized';
+            break;
+        }
+       
         document.documentElement.setAttribute('data-theme', newTheme);
+        document.getElementById('current-theme').textContent = newTheme + ' theme';
         localStorage.setItem('theme', '--');
+
         ">
-      Skift fargetema
-    </button>
+        Skift fargetema
+      </button>
+    </div>
+
   </footer>
 
   <script>includeHTML();</script>

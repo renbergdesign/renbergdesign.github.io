@@ -1,11 +1,36 @@
 .tabcontent{
   color: var(--fgcolor);
   display: none;
-  padding: 60px 20px;
-  height: 100%;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 .tabcontent h2{
   font-size: 3rem;
   text-transform: uppercase;
+  padding-left: 28px;
+}
+
+.sheet{
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  min-height: 80vh;
+}
+
+.sheet h3{
+  font-size: 2rem;;
+}
+
+#usn-logo{
+  fill: dodgerblue;
+}
+
+#usn-logo:hover{
+  fill: coral;
+}
+
+#usn-logo:focus{
+  background-color: coral;
+  color: var(--txtcolor);
 }
