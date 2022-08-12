@@ -1,0 +1,14 @@
+#myData div details{
+background-color: #ebebeb;
+}
+#myData div details summary{
+  background-color: #212a2e;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#myData div details div{
+  padding: 0 20px 10px;
+}
+
