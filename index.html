@@ -60,11 +60,10 @@
         <li class="tab4 listitem txt-only tablink" onclick="openPage('tutorials', this)">
           Tutorials
         </li>
-        <li class="tab4 listitem txt-only tablink" onclick="openPage('about', this)">
-          Om nettsiden
+        <li class="tab4 listitem txt-only tablink">
+          <a href="./pages/about.html">Om nettsiden</a>
         </li>
       </ul>
-
     </nav>
   </header>
 
@@ -72,8 +71,7 @@
   <!-- Main -->
   <main>
     <div id="home" class="tabcontent">
-      <div w3-include-html="public_html/home.html"></div>
-    </div>
+      <div w3-include-html="pages\home.html"></div>
     </div>
 
     <!-- FORELESNINGER START -->
@@ -95,9 +93,9 @@
     <!-- TUTORIALS END -->
 
     <!-- ABOUT START -->
-    <div id="about" class="tabcontent">
+    <!-- <div id="about" class="tabcontent">
       <div w3-include-html="public_html\about.html"></div>
-    </div>
+    </div> -->
     <!-- ABOUT END -->
 
     <script>
@@ -182,10 +180,6 @@
 
 
     includeHTML();
-
-    // Open first of detail content
-    // document.getElementsByTagName("details")[0].open = true;
-
 
   </script>
 

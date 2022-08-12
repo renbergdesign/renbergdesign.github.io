@@ -1,11 +1,66 @@
-<html lang="en">
+<html lang="en" data-theme="organized">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/renbergdesign.png" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+  </style>
+
+  <link rel="stylesheet" href="../src/css/styles.css" />
+  <link rel="stylesheet" href="../src/css/nav_styles.css" />
+  <link rel="stylesheet" href="../src/css/tore.css" />
+  <link rel="stylesheet" href="../src/css/tabs.css" />
+  <link rel="stylesheet" href="../src/css/theme.css" />
+  <link rel="stylesheet" href="../src/css/sheets.css" />
+  <link rel="stylesheet" href="../src/css/notes.css" />
+
+  <script type="module" src="../src/js/tore.js"></script>
+  <script src="..\src\js\includeHtml.js"></script>
+  <script src="..\src\js\notes.js"></script>
 </head>
+
+<!-- Header -->
+<header>
+  <div class="card">
+    <div>
+      <img class="avatar" src="https://github.com/renbergdesign.png" alt="" />
+    </div>
+    <div>
+      <br />
+      <h2>Markus Jarl Renberg</h2>
+      <p><i>Student/Freelance</i></p>
+      <br />
+      <ul class="platforms">
+        <li><a target="_blank" href="https://www.renbergdesign.no">Freelance</a></li>
+        <li><a target="_blank" href="https://github.com/renbergdesign">Github</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/markusrenberg/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li class="tab1 listitem txt-only tablink active" id="defaultOpen" onclick="openPage('home', this)">
+        Hjem
+      </li>
+      <li class="tab2 listitem tablink" onclick="openPage('lectures', this)">
+        Forelesninger
+      </li>
+      <li class="tab3 listitem txt-only tablink" onclick="openPage('projects', this)">
+        Prosjekter
+      </li>
+      <li class="tab4 listitem txt-only tablink" onclick="openPage('tutorials', this)">
+        Tutorials
+      </li>
+    </ul>
+
+  </nav>
+</header>
+
 
 <body>
   <div class="sheet column">
@@ -15,5 +70,13 @@
     </details>
   </div>
 </body>
+
+
+<script>
+
+
+  includeHTML();
+
+</script>
 
 </html>
