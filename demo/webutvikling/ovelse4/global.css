@@ -1,0 +1,110 @@
+/*CSS-DOCUMENT*/
+
+.container {
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid #000;
+}
+
+nav {
+    background-color: pink;
+    padding: 1em 0;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    width: 15%;
+    border: 1px dotted white;
+}
+
+.horizontal {
+    width: 90%;
+    margin: auto;
+    border: 1px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.horizontal div{
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+.rod {
+    background-color: red;
+    width: 70%;
+}
+
+.bla {
+    background-color: blue;
+    width: 40%;
+}
+
+.gronn {
+    background-color: green;
+    width: 40%;
+}
+
+.gul {
+    background-color: yellow;
+    width: 100%;
+}
+
+.bildegalleri {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* UL skal alltid ha padding 0 */
+/* IMG skal alltid være block + 100%2 */
+
+figure {
+    margin: 0;
+    border: 1px solid black;
+    width: 40%;
+    margin-top: 2rem;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.vertical {
+    width: 35%;
+    border: 1px solid black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brun {
+    background-color: brown;
+    height: 20%;
+}
+
+.rosa {
+    background-color: pink;
+    height: 40%;
+}
+
+.graa {
+    background-color: gray;
+    height: 10%;
+}
+
+.orange {
+    background-color: orange;
+    height: 20%;
+}

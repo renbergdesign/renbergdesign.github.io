@@ -1,0 +1,51 @@
+/*CSS-DOCUMENT*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2)
+}
+
+.logo:hover{
+    background-color: coral;
+}
+
+h1 {
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4em;
+}
+
+.top-paragraph {
+    border: brown 1px solid;
+    width: 660px;
+}
+
+ul {
+    border: black 1px solid;
+    padding: 1em; /* Luft */
+    width: 660px;
+}
+
+.txt-pink{
+    color: salmon;
+}
+
+.bg{
+    width: 25%;
+    padding: 1em;
+    color: white;
+}
+
+.bg-red{
+    background-color: coral;
+}
+.bg-yellow{
+    background-color: #ffff00;
+}
+.bg-blue{
+    background-color: dodgerblue;
+}

@@ -1,0 +1,29 @@
+/*CSS-DOCUMENT*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: solid #000 1px;
+    width: 80%;
+    margin: 1em auto 0; /* sentrerer */
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    background-color: lightcyan;
+    padding: 1em .5em 3em 0;
+    border: 3px dotted #000;
+    /* flex: 1; */
+    width: 40%; 
+}
+
+section {
+    background-color: lightsalmon;
+    border: 3px dotted #000;
+    padding: 1em;
+    /* flex: 2; */
+    width: 55%;
+}

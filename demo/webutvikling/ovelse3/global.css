@@ -1,0 +1,72 @@
+/*CSS-DOCUMENT*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    background-color: white;
+    /* max-width: 1200px; */
+    width: 80%;
+    margin: 1em auto;
+    border: 1px solid #000;
+}
+
+header {
+    background-color: #f9f9f9;
+}
+
+header .logo{
+    width: 150px;
+}
+
+
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li{
+    width: 20%;
+    text-align: center; /* fungerer bare på inline-elementer */
+    padding: 1em;
+    border: solid 1px #000;
+}
+
+li:nth-child(1){
+    color: purple;
+}
+li:nth-child(2){
+    color: blue;
+}
+li:nth-child(3){
+    color: blue;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+main img.front-img {
+    width: 30%;
+}
+
+
+article{
+    width: 60%;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 1em;
+    text-align: center;
+}
