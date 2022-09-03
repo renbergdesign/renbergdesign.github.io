@@ -1,4 +1,4 @@
-html[data-theme='light-mode'] {
+html {
   --color-header-bg: rgb(0, 0, 0);
   --color-nav-txt: rgb(255, 255, 255);
   --color-overlay: rgba(0, 0, 0, 0.5);
@@ -6,4 +6,7 @@ html[data-theme='light-mode'] {
   --color-primary: #99272D;
 
   --maxwidth: 1280px;
+
+  --font-body: 'Source Sans Pro', sans-serif;
+
 }

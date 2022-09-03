@@ -1,0 +1,44 @@
+/* INDEX.CSS */
+
+.hero {
+    color: white;
+    text-align: center;
+  }
+  
+  .hero p{
+    font-size: 2em;
+    margin-bottom: 0;
+    font-weight: 200;
+  }
+  
+  .hero h2{
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  
+  .hero .buttons{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .hero .buttons a{
+    text-decoration: none;
+    width: 200px;
+    padding: 20px;
+    border: white solid 1px;
+    border-radius: 40px;
+    color: white;
+    transition: all 1.5s ease;
+  }
+  
+  .hero .buttons a:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .hero .buttons a span{
+    text-transform: uppercase;
+  }

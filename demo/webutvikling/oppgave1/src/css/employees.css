@@ -1,11 +1,6 @@
 /* EMPLOYEES.CSS */
 
-.ansatte {
-  background-color: white;
-  padding: 2em 4em;
-}
-
-.ansatte h1 {
+ h1 {
   font-weight: 500;
   font-size: 4em;
   text-align: center;

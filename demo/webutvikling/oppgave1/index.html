@@ -1,18 +1,19 @@
-<html lang="nb" data-theme="light-mode">
+<html lang="nb">
 
 <head>
   <meta charset="UTF-8">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="src/css/normalize.css">
-  <!-- "Normaliserer" CSS slik at utseende blir mest mulig som forventet i alle nettlesere -->
-  <link rel="stylesheet" href="src/css/theme.css">
-  <!-- CSS-variabler som definerer gjentatte brukte verdier på CSS-properties -->
-  <link rel="stylesheet" href="src/css/global.css"> <!-- CSS som påvirker alle sider på nettstedet -->
+  <link rel="stylesheet" href="src/css/remedy.css"> <!-- Endrer User Agent Styles (https://github.com/jensimmons/cssremedy) -->
+  <link rel="stylesheet" href="src/css/theme.css"> <!-- Definerer CSS-variabler for gjentatt bruk -->
+  <link rel="stylesheet" href="src/css/global.css"> <!-- CSS som påvirker ALLE sider -->
+  <link rel="stylesheet" href="src/css/index.css"> <!-- CSS som påvirker KUN DENNE siden -->
 
   <!--
     Webfonter - Google Fonts
-    •	
+    •	Roboto Slab (Overskrifter)
+    •	Source Sans Pro (Brødtekst og linker)
+    •	Oooh Baby (Signatur)
   -->
   <link
     href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto+Slab:wght@100&family=Source+Sans+Pro:wght@300&display=swap"
@@ -21,7 +22,7 @@
   <!-- Favicon -->
   <link rel="icon" href="src/favicon.ico">
 
-
+  <!-- Fontawesome (Ikoner) -->
   <script src="https://kit.fontawesome.com/f101f184d1.js" crossorigin="anonymous"></script>
 
   <title>Fleshaug Advokatbyrå</title>
@@ -29,10 +30,50 @@
 
 <body>
 
-  <div class="page-wrapper">
+  <!-- HEADER START -->
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <div class="logo-container">
+          <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
+            title="Til Startsiden">
+          <div>
+            <h1>Fleshaug</h1>
+            <h2>Advokatbyrå</h2>
+          </div>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="tjenester.html">Tjenester</a></li>
+          <li><a href="ansatte.html">Ansatte</a></li>
+          <li><a href="#">En til side</a></li>
+          <li><a href="#">Enda en side</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER SLUTT -->
 
-    <header>
-      <div class="container">
+  <!-- MAIN START -->
+  <main>
+    <div class="hero">
+        <p class="payoff"><i>"Utsikten er best fra de høyeste fjell"</i></p>
+        <h2 class="title">Støtten du trenger</h2>
+        <div class="buttons">
+          <a href="tjenester.html"><span>Tjenester</span></a>
+          <a href="ansatte.html"><span>Ansatte</span></a>
+        </div>
+    </div>
+  </main>
+  <!-- MAIN SLUTT -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container">
+
+      <!-- SEKSJON 1 (LITEN LOGO) -->
+      <section class="logo grid3">
         <a href="index.html">
           <div class="logo-container">
             <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
@@ -43,42 +84,46 @@
             </div>
           </div>
         </a>
-        <nav>
-          <ul>
-            <li><a href="tjenester.html">Tjenester</a></li>
-            <li><a href="ansatte.html">Ansatte</a></li>
-            <li><a href="#">En til side</a></li>
-            <li><a href="#">Enda en side</a></li>
-          </ul>
-        </nav>
+      </section>
 
-      </div>
-    </header>
+      <!-- SEKSJON 2 (KONTAKTINFORMASJON) -->
+      <section class="contact-info grid3">
+        <h2>Kontakt oss</h2>
+        <ul>
+          <li>
+            <a class="adresse" target="_blank" href="https://goo.gl/maps/SijKZAugcM8n35gWA">
+              <i class="fa-solid fa-house"></i>
+              <span>Liksomveien 123</span>
+            </a>
+          </li>
+          <li>
+            <a class="email" target="_blank" href="mailto:post@fleshaug.no">
+              <i class="fa-solid fa-envelope"></i>
+              <span>post@fleshaug.no</span>
+            </a>
+          </li>
+          <li>
+            <a class="phone" target="_blank" href="tel:+4733345678">
+              <i class="fa-solid fa-phone"></i>
+              <span>(+47) 333 45 678</span>
+            </a>
+          </li>
+        </ul>
 
-    <main>
-
-      <div class="hero">
-        <div class="container">
-          <p class="payoff"><i>"Utsikten er best fra de høyeste fjell"</i></p>
-          <h2 class="title">Støtten du trenger</h2>
-          <div class="buttons">
-            <a href="tjenester.html"><span>Tjenester</span></a>
-            <a href="ansatte.html"><span>Ansatte</span></a>
-          </div>
-
+      <!-- SEKSJON 3 (INFO OM UTVIKLEREN AV WEBLØSNINGEN) -->
+      </section>
+      <section class="about-designer grid3">
+        <div>
+          <img class="avatar" src="https://github.com/renbergdesign.png" alt="">
+          <h2>Markus J. Renberg</h2>
+          <p><i>Webutvikler / Student</i></p>
         </div>
-      </div>
+      </section>
 
+    </div>
+  </footer>
+  <!-- FOOTER SLUTT -->
 
-
-    </main>
-
-    <footer>
-      <script> </script>
-    </footer>
-
-  </div>
-  <!-- Slutten på Main-Container -->
 
 </body>
 
