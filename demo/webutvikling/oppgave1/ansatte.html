@@ -13,11 +13,10 @@
 
   <!--
     Webfonter - Google Fonts
-    •	Playfair Display (400)
-    •	Source Sans Pro (300)
+    •	
   -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Source+Sans+Pro:wght@200&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto+Slab:wght@100&family=Source+Sans+Pro:wght@300&display=swap"
     rel="stylesheet">
 
   <!-- Favicon -->
@@ -31,24 +30,30 @@
 
 <body>
 
-  <div class="main-container">
+  <div class="page-wrapper">
 
     <header>
-      <div class="logo">
-        <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug" title="Til Startsiden">
-        <div>
-          <h1>Fleshaug</h1>
-          <h2>Advokatbyrå</h2>
-        </div>
+      <div class="container">
+        <a href="index.html">
+          <div class="logo-container">
+            <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
+              title="Til Startsiden">
+            <div>
+              <h1>Fleshaug</h1>
+              <h2>Advokatbyrå</h2>
+            </div>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="ansatte.html">Ansatte</a></li>
+            <li><a href="#">En til side</a></li>
+            <li><a href="#">Enda en side</a></li>
+          </ul>
+        </nav>
+
       </div>
-      <nav>
-        <ul>
-          <li><a href="tjenester.html">Tjenester</a></li>
-          <li><a href="ansatte.html">Ansatte</a></li>
-          <li><a href="#">En til side</a></li>
-          <li><a href="#">Enda en side</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -57,11 +62,11 @@
         <h1>Våre ansatte</h1>
         <hr>
 
-        <div class="main-inner">
+        <div class="ansatte-inner">
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-kh.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-kh.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-kh.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-kh.jpg" alt="">
             </picture>
@@ -78,7 +83,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-gh.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-gh.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-gh.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-gh.jpg" alt="">
             </picture>
@@ -95,7 +100,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-sb.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-sb.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-sb.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-sb.jpg" alt="">
             </picture>
@@ -112,7 +117,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-kf.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-kf.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-kf.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-kf.jpg" alt="">
             </picture>
@@ -129,7 +134,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-kmg.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-kmg.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-kmg.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-kmg.jpg" alt="">
             </picture>
@@ -146,7 +151,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-tif.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-tif.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-tif.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-tif.jpg" alt="">
             </picture>
@@ -163,7 +168,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-bwh.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-bwh.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-bwh.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-bwh.jpg" alt="">
             </picture>
@@ -180,7 +185,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-jl.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-jl.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-jl.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-jl.jpg" alt="">
             </picture>
@@ -197,7 +202,7 @@
 
           <figure>
             <picture>
-              <!-- <source srcset="src/images/webp/avatar-es.webp" type="image/webp"> -->
+              <source srcset="src/images/webp/avatar-es.webp" type="image/webp">
               <source srcset="src/images/jpg/avatar-es.jpg" type="image/jpeg">
               <img src="src/images/jpg/avatar-es.jpg" alt="">
             </picture>
@@ -220,7 +225,57 @@
     </main>
 
     <footer>
-      <script> </script>
+      <div class="container">
+
+        <section class="logo grid3">
+
+          <a href="index.html">
+            <div class="logo-container">
+              <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
+                title="Til Startsiden">
+              <div>
+                <h1>Fleshaug</h1>
+                <h2>Advokatbyrå</h2>
+              </div>
+            </div>
+          </a>
+
+        </section>
+        <section class="contact-info grid3">
+          <h2>Kontakt oss</h2>
+          <ul>
+            <li>
+              <a class="adresse" target="_blank" href="https://goo.gl/maps/SijKZAugcM8n35gWA">
+                <i class="fa-solid fa-house"></i>
+                <span>Liksomveien 123</span>
+              </a>
+            </li>
+            <li>
+              <a class="email" target="_blank" href="mailto:post@fleshaug.no">
+                <i class="fa-solid fa-envelope"></i>
+                <span>post@fleshaug.no</span>
+              </a>
+            </li>
+            <li>
+              <a class="phone" target="_blank" href="tel:+4733345678">
+
+                <i class="fa-solid fa-phone"></i>
+                <span>(+47) 333 45 678</span>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+        <section class="about-designer grid3">
+          <div>
+            <img class="avatar" src="https://github.com/renbergdesign.png" alt="">
+            <h2>Markus J. Renberg</h2>
+            <p><i>Webutvikler / Student</i></p>
+          </div>
+        </section>
+
+      </div>
     </footer>
 
   </div>
