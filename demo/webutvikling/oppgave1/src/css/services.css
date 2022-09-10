@@ -1,15 +1,13 @@
 /* SERVICES.CSS */
 
-main {
-  background-color: white;
-}
 
 main>h1 {
   text-align: center;
 }
 
 .service {
-  text-align: center;
+  text-align: center; 
+  margin-top: 2em;
 }
 
 .service i {
@@ -20,8 +18,12 @@ main>h1 {
 
 .service h2 {
   font-size: 2em;
+  margin-top: .5em;
 }
 
 .service a {
+  display: block;
   color: #EC630F;
+  margin: 1em 0;
+  text-decoration: underline;
 }

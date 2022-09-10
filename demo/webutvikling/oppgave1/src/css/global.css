@@ -145,6 +145,24 @@ main {
 .container.page {
   background-color: white;
   box-shadow: 3px 0px 10px #444444;
+  margin-top: 1em;
+  padding: 2em 0;
+}
+
+.container.page>h1{
+  font-weight: 500;
+  font-size: 4em;
+  text-align: center;
+}
+
+.page-inner {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  color: black;
 }
 
 /* -----------------------------

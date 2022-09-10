@@ -1,32 +1,14 @@
 /* EMPLOYEES.CSS */
 
  h1 {
-  font-weight: 500;
-  font-size: 4em;
-  text-align: center;
 }
 
-.page{
-  margin-top: 1em;
-  padding: 2em 0;
-}
-
-.ansatte-inner {
-  width: 900px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: left;
-  color: black;
-}
-
-.ansatte-inner figure{
+.page-inner figure{
   width: 30%;
   margin-top: 2em;
 }
 
-.ansatte-inner figure picture img{
+.page-inner figure picture img{
   box-shadow: 0px 3px 4px #888888;
   border-radius: 50%;
   transition: all 0.5s ease;
@@ -34,57 +16,57 @@
   filter: saturate(.2);
 }
 
-.ansatte-inner figure:hover picture img{
+.page-inner figure:hover picture img{
   filter: opacity(1);
   filter: saturate(1);
 }
 
-.ansatte-inner .name {
+.page-inner .name {
   font-size: 2em;
   margin-bottom: 0;
 }
 
-.ansatte-inner .position {
+.page-inner .position {
   font-size: 1em;
 }
 
-.ansatte-inner p {
+.page-inner p {
   margin: 0;
   padding: .4em 0;
 }
 
-.ansatte-inner a {
+.page-inner a {
   text-decoration: none;
   font-weight: 600;
   color: red;
 }
 
-.ansatte-inner .email {
+.page-inner .email {
   font-size: 1em;
 }
 
-.ansatte-inner .email::before {
+.page-inner .email::before {
 	content: "\f0e0";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-.ansatte-inner .phone {
+.page-inner .phone {
   font-size: 1em;
 }
 
-.ansatte-inner .phone::before {
+.page-inner .phone::before {
 	content: "\f095";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-.ansatte-inner .email,
-.ansatte-inner .phone {
+.page-inner .email,
+.page-inner .phone {
   transition: all 1s ease;
 }
 
-.ansatte-inner figure .email:hover,
-.ansatte-inner figure .phone:hover{
+.page-inner figure .email:hover,
+.page-inner figure .phone:hover{
   text-indent: .5em;
 }
