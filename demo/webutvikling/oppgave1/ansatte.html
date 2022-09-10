@@ -6,8 +6,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="src/css/normalize.css">
   <!-- "Normaliserer" CSS slik at utseende blir mest mulig som forventet i alle nettlesere -->
-  <link rel="stylesheet" href="src/css/theme.css">
-  <!-- CSS-variabler som definerer gjentatte brukte verdier på CSS-properties -->
   <link rel="stylesheet" href="src/css/global.css"> <!-- CSS som påvirker alle sider på nettstedet -->
   <link rel="stylesheet" href="src/css/employees.css"> <!-- CSS som påvirker alle sider på nettstedet -->
 
@@ -29,9 +27,203 @@
 </head>
 
 <body>
-  
-    <header>
-      <div class="container">
+
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <div class="logo-container">
+          <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
+            title="Til Startsiden">
+          <div>
+            <h1>Fleshaug</h1>
+            <h2>Advokatbyrå</h2>
+          </div>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="tjenester.html">Tjenester</a></li>
+          <li><a href="ansatte.html">Ansatte</a></li>
+          <li><a href="#">En til side</a></li>
+          <li><a href="#">Enda en side</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container page">
+      <h1>Våre ansatte</h1>
+      <hr>
+
+      <div class="ansatte-inner">
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-kh.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-kh.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-kh.jpg" alt="">
+          </picture>
+          <h3 class="name">Knut Hamsun</h3>
+          <p class="position">Senior Partner</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="tel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-gh.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-gh.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-gh.jpg" alt="">
+          </picture>
+          <h3 class="name">Geir Hansen</h3>
+          <p class="position">Junior Partner</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:geir.hansen@fleshaug.no">geir.hansen@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="tel:+4798415555">(+47) 98 41 55 55</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-sb.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-sb.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-sb.jpg" alt="">
+          </picture>
+          <h3 class="name">Susanne Berg</h3>
+          <p class="position">Prosjektleder/rådgiver</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:susanne@fleshaug.no">susanne@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4733351755">(+47) 333 51 755</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-kf.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-kf.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-kf.jpg" alt="">
+          </picture>
+          <h3 class="name">Kenneth Fjærstad</h3>
+          <p class="position">Spesialistrådgiver</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-kmg.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-kmg.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-kmg.jpg" alt="">
+          </picture>
+          <h3 class="name">Knut R. Ut</h3>
+          <p class="position">Økonomisjef</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-tif.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-tif.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-tif.jpg" alt="">
+          </picture>
+          <h3 class="name">Trine I. Farta</h3>
+          <p class="position">Seniorrådgiver</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-bwh.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-bwh.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-bwh.jpg" alt="">
+          </picture>
+          <h3 class="name">Bjarte Wog</h3>
+          <p class="position">Markeds- og kommunikasjonssjef</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-jl.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-jl.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-jl.jpg" alt="">
+          </picture>
+          <h3 class="name">Julian Lykkebo</h3>
+          <p class="position">Lærling</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+        <figure>
+          <picture>
+            <source srcset="src/images/webp/avatar-es.webp" type="image/webp">
+            <source srcset="src/images/jpg/avatar-es.jpg" type="image/jpeg">
+            <img src="src/images/jpg/avatar-es.jpg" alt="">
+          </picture>
+          <h3 class="name">Ellen Smestad</h3>
+          <p class="position">Lærling</p>
+          <hr>
+          <p class="email">
+            <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
+          </p>
+          <p class="phone">
+            <a href="teel:+4798004500">(+47) 98 00 45 00</a>
+          </p>
+        </figure>
+
+      </div>
+    </div>
+  </main>
+  <!-- MAIN SLUTT -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container">
+
+      <!-- SEKSJON 1 (LITEN LOGO) -->
+      <section class="logo grid3">
         <a href="index.html">
           <div class="logo-container">
             <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
@@ -42,239 +234,45 @@
             </div>
           </div>
         </a>
-        <nav>
-          <ul>
-            <li><a href="tjenester.html">Tjenester</a></li>
-            <li><a href="ansatte.html">Ansatte</a></li>
-            <li><a href="#">En til side</a></li>
-            <li><a href="#">Enda en side</a></li>
-          </ul>
-        </nav>
+      </section>
 
-      </div>
-    </header>
+      <!-- SEKSJON 2 (KONTAKTINFORMASJON) -->
+      <section class="contact-info grid3">
+        <h2>Kontakt oss</h2>
+        <ul>
+          <li>
+            <a class="adresse" target="_blank" href="https://goo.gl/maps/SijKZAugcM8n35gWA">
+              <i class="fa-solid fa-house"></i>
+              <span>Liksomveien 123</span>
+            </a>
+          </li>
+          <li>
+            <a class="email" target="_blank" href="mailto:post@fleshaug.no">
+              <i class="fa-solid fa-envelope"></i>
+              <span>post@fleshaug.no</span>
+            </a>
+          </li>
+          <li>
+            <a class="phone" target="_blank" href="tel:+4733345678">
+              <i class="fa-solid fa-phone"></i>
+              <span>(+47) 333 45 678</span>
+            </a>
+          </li>
+        </ul>
 
-    <main>
-
-      <div class="container page">
-        <h1>Våre ansatte</h1>
-        <hr>
-
-        <div class="ansatte-inner">
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-kh.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-kh.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-kh.jpg" alt="">
-            </picture>
-            <h3 class="name">Knut Hamsun</h3>
-            <p class="position">Senior Partner</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="tel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-gh.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-gh.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-gh.jpg" alt="">
-            </picture>
-            <h3 class="name">Geir Hansen</h3>
-            <p class="position">Junior Partner</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:geir.hansen@fleshaug.no">geir.hansen@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="tel:+4798415555">(+47) 98 41 55 55</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-sb.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-sb.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-sb.jpg" alt="">
-            </picture>
-            <h3 class="name">Susanne Berg</h3>
-            <p class="position">Prosjektleder/rådgiver</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:susanne@fleshaug.no">susanne@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4733351755">(+47) 333 51 755</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-kf.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-kf.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-kf.jpg" alt="">
-            </picture>
-            <h3 class="name">Kenneth Fjærstad</h3>
-            <p class="position">Spesialistrådgiver</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-kmg.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-kmg.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-kmg.jpg" alt="">
-            </picture>
-            <h3 class="name">Knut R. Ut</h3>
-            <p class="position">Økonomisjef</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-tif.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-tif.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-tif.jpg" alt="">
-            </picture>
-            <h3 class="name">Trine I. Farta</h3>
-            <p class="position">Seniorrådgiver</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-bwh.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-bwh.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-bwh.jpg" alt="">
-            </picture>
-            <h3 class="name">Bjarte Wog</h3>
-            <p class="position">Markeds- og kommunikasjonssjef</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-jl.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-jl.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-jl.jpg" alt="">
-            </picture>
-            <h3 class="name">Julian Lykkebo</h3>
-            <p class="position">Lærling</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-          <figure>
-            <picture>
-              <source srcset="src/images/webp/avatar-es.webp" type="image/webp">
-              <source srcset="src/images/jpg/avatar-es.jpg" type="image/jpeg">
-              <img src="src/images/jpg/avatar-es.jpg" alt="">
-            </picture>
-            <h3 class="name">Ellen Smestad</h3>
-            <p class="position">Lærling</p>
-            <hr>
-            <p class="email">
-              <a href="mailto:kh@fleshaug.no">kh@fleshaug.no</a>
-            </p>
-            <p class="phone">
-              <a href="teel:+4798004500">(+47) 98 00 45 00</a>
-            </p>
-          </figure>
-
-        </div>
-      </div>
-    </main>
-    <!-- MAIN SLUTT -->
-  
-    <!-- FOOTER START -->
-    <footer>
-      <div class="container">
-  
-        <!-- SEKSJON 1 (LITEN LOGO) -->
-        <section class="logo grid3">
-          <a href="index.html">
-            <div class="logo-container">
-              <img src="src/images/svg/emblem-monowhite.svg" alt="Emblemet til Advokatbyrået Fleshaug"
-                title="Til Startsiden">
-              <div>
-                <h1>Fleshaug</h1>
-                <h2>Advokatbyrå</h2>
-              </div>
-            </div>
-          </a>
-        </section>
-  
-        <!-- SEKSJON 2 (KONTAKTINFORMASJON) -->
-        <section class="contact-info grid3">
-          <h2>Kontakt oss</h2>
-          <ul>
-            <li>
-              <a class="adresse" target="_blank" href="https://goo.gl/maps/SijKZAugcM8n35gWA">
-                <i class="fa-solid fa-house"></i>
-                <span>Liksomveien 123</span>
-              </a>
-            </li>
-            <li>
-              <a class="email" target="_blank" href="mailto:post@fleshaug.no">
-                <i class="fa-solid fa-envelope"></i>
-                <span>post@fleshaug.no</span>
-              </a>
-            </li>
-            <li>
-              <a class="phone" target="_blank" href="tel:+4733345678">
-                <i class="fa-solid fa-phone"></i>
-                <span>(+47) 333 45 678</span>
-              </a>
-            </li>
-          </ul>
-  
         <!-- SEKSJON 3 (INFO OM UTVIKLEREN AV WEBLØSNINGEN) -->
-        </section>
-        <section class="about-designer grid3">
-          <div>
-            <img class="avatar" src="https://github.com/renbergdesign.png" alt="">
-            <h2>Markus J. Renberg</h2>
-            <p><i>Webutvikler / Student</i></p>
-          </div>
-        </section>
-  
-      </div>
-    </footer>
-    <!-- FOOTER SLUTT -->
+      </section>
+      <section class="about-designer grid3">
+        <div>
+          <img class="avatar" src="https://github.com/renbergdesign.png" alt="">
+          <h2>Markus J. Renberg</h2>
+          <p><i>Webutvikler / Student</i></p>
+        </div>
+      </section>
+
+    </div>
+  </footer>
+  <!-- FOOTER SLUTT -->
 
 
 </body>
