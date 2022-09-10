@@ -47,16 +47,19 @@ a {
 
 .container {
   max-width: var(--maxwidth);
+  width: var(--maxwidth);
   margin: 0 auto;
 }
 
-.container.page {
-  background-color: white;
+.flex-container {
+  display: flex;
 }
 
 .grid3 {
   width: 33.33%;
 }
+
+.orange{ color: #EC630F; }
 
 /* -----------------------------
 ------------ HEADER ------------
@@ -137,9 +140,12 @@ main {
   justify-content: space-around;
 
   margin: 2em 0;
-  /* box-shadow: 3px 0px 10px #444444; */
 }
 
+.container.page {
+  background-color: white;
+  box-shadow: 3px 0px 10px #444444;
+}
 
 /* -----------------------------
 ------------ FOOTER ------------
